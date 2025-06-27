@@ -1,0 +1,10 @@
+-리스트 조회
+country <- city <- address
+
+- 입력
+country, city : address, customer
+
+- 수정
+country : city, address, customer
+
+- 삭제 : 자식존재하는 행은 삭제
