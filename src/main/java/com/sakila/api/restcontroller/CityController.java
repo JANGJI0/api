@@ -1,4 +1,4 @@
-package com.sakila.api.restController;
+package com.sakila.api.restcontroller;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
