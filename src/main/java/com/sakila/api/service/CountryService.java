@@ -51,4 +51,25 @@ public class CountryService {
 		return countryRepository.findAll();
 	}
 	
+	// 한 행 조회
+	public CountryEntity findById(int countryId) {
+		return countryRepository.findById(countryId).orElse(null);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

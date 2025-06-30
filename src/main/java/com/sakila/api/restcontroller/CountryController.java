@@ -25,6 +25,12 @@ public class CountryController {
 		this.countryService = countryService;
 	}
 	
+	// 한행 조회
+	@GetMapping("/countryOne/{countryId}")
+	public ResponseEntity<CountryEntity> countryOne(@PathVariable int countryId) {
+		return new ResponseEntity<CountryEntity> (countryService.findById(countryId), HttpStatus.OK);
+	}
+	
 	// 삭제
 	@DeleteMapping("/country/{countryId}")
 	public ResponseEntity<String> deleteCountry(@PathVariable int countryId) {
@@ -52,6 +58,7 @@ public class CountryController {
 		return new ResponseEntity<String>("입력성공", HttpStatus.CREATED);
 	}
 	
+	// 전체 조회
 	@GetMapping("/country")
 	public ResponseEntity<List<CountryEntity>> country() {
 		return new ResponseEntity<List<CountryEntity>>(countryService.findAll(), HttpStatus.OK);

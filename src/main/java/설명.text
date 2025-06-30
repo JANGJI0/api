@@ -8,3 +8,6 @@ country, city : address, customer
 country : city, address, customer
 
 - 삭제 : 자식존재하는 행은 삭제
+country : city
+
++ Store, Customer CRUD
